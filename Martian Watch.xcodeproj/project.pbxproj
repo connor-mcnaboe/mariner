@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE5C259427C13C680052FDF9 /* Martian Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EE5C259327C13C680052FDF9 /* Martian Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE5C259927C13C6A0052FDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5C259827C13C6A0052FDF9 /* Assets.xcassets */; };
+		EE5C259F27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE5C259E27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE5C25A427C13C6A0052FDF9 /* Martian_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25A327C13C6A0052FDF9 /* Martian_WatchApp.swift */; };
+		EE5C25A627C13C6A0052FDF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25A527C13C6A0052FDF9 /* ContentView.swift */; };
+		EE5C25A827C13C6A0052FDF9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25A727C13C6A0052FDF9 /* NotificationController.swift */; };
+		EE5C25AA27C13C6A0052FDF9 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25A927C13C6A0052FDF9 /* NotificationView.swift */; };
+		EE5C25AC27C13C6A0052FDF9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25AB27C13C6A0052FDF9 /* ComplicationController.swift */; };
+		EE5C25AE27C13C6B0052FDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5C25AD27C13C6B0052FDF9 /* Assets.xcassets */; };
+		EE5C25B127C13C6B0052FDF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5C25B027C13C6B0052FDF9 /* Preview Assets.xcassets */; };
+		EE5C25BD27C13C6B0052FDF9 /* Martian_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25BC27C13C6B0052FDF9 /* Martian_WatchTests.swift */; };
+		EE5C25C727C13C6B0052FDF9 /* Martian_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25C627C13C6B0052FDF9 /* Martian_WatchUITests.swift */; };
+		EE5C25C927C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25C827C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE5C259527C13C680052FDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5C258927C13C680052FDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5C259227C13C680052FDF9;
+			remoteInfo = "Martian Watch WatchKit App";
+		};
+		EE5C25A027C13C6A0052FDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5C258927C13C680052FDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5C259D27C13C6A0052FDF9;
+			remoteInfo = "Martian Watch WatchKit Extension";
+		};
+		EE5C25B927C13C6B0052FDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5C258927C13C680052FDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5C259D27C13C6A0052FDF9;
+			remoteInfo = "Martian Watch WatchKit Extension";
+		};
+		EE5C25C327C13C6B0052FDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5C258927C13C680052FDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5C259227C13C680052FDF9;
+			remoteInfo = "Martian Watch WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE5C25CF27C13C6B0052FDF9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EE5C259F27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25D327C13C6B0052FDF9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EE5C259427C13C680052FDF9 /* Martian Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE5C258F27C13C680052FDF9 /* Martian Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Martian Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5C259327C13C680052FDF9 /* Martian Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Martian Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5C259827C13C6A0052FDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE5C259E27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Martian Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5C25A327C13C6A0052FDF9 /* Martian_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martian_WatchApp.swift; sourceTree = "<group>"; };
+		EE5C25A527C13C6A0052FDF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE5C25A727C13C6A0052FDF9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EE5C25A927C13C6A0052FDF9 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		EE5C25AB27C13C6A0052FDF9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EE5C25AD27C13C6B0052FDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE5C25B027C13C6B0052FDF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE5C25B227C13C6B0052FDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5C25B327C13C6B0052FDF9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EE5C25B827C13C6B0052FDF9 /* Martian WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Martian WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5C25BC27C13C6B0052FDF9 /* Martian_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martian_WatchTests.swift; sourceTree = "<group>"; };
+		EE5C25C227C13C6B0052FDF9 /* Martian WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Martian WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5C25C627C13C6B0052FDF9 /* Martian_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martian_WatchUITests.swift; sourceTree = "<group>"; };
+		EE5C25C827C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martian_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE5C259B27C13C6A0052FDF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25B527C13C6B0052FDF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25BF27C13C6B0052FDF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE5C258827C13C680052FDF9 = {
+			isa = PBXGroup;
+			children = (
+				EE5C259727C13C680052FDF9 /* Martian Watch WatchKit App */,
+				EE5C25A227C13C6A0052FDF9 /* Martian Watch WatchKit Extension */,
+				EE5C25BB27C13C6B0052FDF9 /* Martian WatchTests */,
+				EE5C25C527C13C6B0052FDF9 /* Martian WatchUITests */,
+				EE5C259027C13C680052FDF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE5C259027C13C680052FDF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C258F27C13C680052FDF9 /* Martian Watch.app */,
+				EE5C259327C13C680052FDF9 /* Martian Watch WatchKit App.app */,
+				EE5C259E27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex */,
+				EE5C25B827C13C6B0052FDF9 /* Martian WatchTests.xctest */,
+				EE5C25C227C13C6B0052FDF9 /* Martian WatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE5C259727C13C680052FDF9 /* Martian Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C259827C13C6A0052FDF9 /* Assets.xcassets */,
+			);
+			path = "Martian Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		EE5C25A227C13C6A0052FDF9 /* Martian Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C25A327C13C6A0052FDF9 /* Martian_WatchApp.swift */,
+				EE5C25A527C13C6A0052FDF9 /* ContentView.swift */,
+				EE5C25A727C13C6A0052FDF9 /* NotificationController.swift */,
+				EE5C25A927C13C6A0052FDF9 /* NotificationView.swift */,
+				EE5C25AB27C13C6A0052FDF9 /* ComplicationController.swift */,
+				EE5C25AD27C13C6B0052FDF9 /* Assets.xcassets */,
+				EE5C25B227C13C6B0052FDF9 /* Info.plist */,
+				EE5C25B327C13C6B0052FDF9 /* PushNotificationPayload.apns */,
+				EE5C25AF27C13C6B0052FDF9 /* Preview Content */,
+			);
+			path = "Martian Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EE5C25AF27C13C6B0052FDF9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C25B027C13C6B0052FDF9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE5C25BB27C13C6B0052FDF9 /* Martian WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C25BC27C13C6B0052FDF9 /* Martian_WatchTests.swift */,
+			);
+			path = "Martian WatchTests";
+			sourceTree = "<group>";
+		};
+		EE5C25C527C13C6B0052FDF9 /* Martian WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C25C627C13C6B0052FDF9 /* Martian_WatchUITests.swift */,
+				EE5C25C827C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift */,
+			);
+			path = "Martian WatchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE5C258E27C13C680052FDF9 /* Martian Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5C25D427C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian Watch" */;
+			buildPhases = (
+				EE5C258D27C13C680052FDF9 /* Resources */,
+				EE5C25D327C13C6B0052FDF9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5C259627C13C680052FDF9 /* PBXTargetDependency */,
+			);
+			name = "Martian Watch";
+			productName = "Martian Watch";
+			productReference = EE5C258F27C13C680052FDF9 /* Martian Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EE5C259227C13C680052FDF9 /* Martian Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5C25D027C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian Watch WatchKit App" */;
+			buildPhases = (
+				EE5C259127C13C680052FDF9 /* Resources */,
+				EE5C25CF27C13C6B0052FDF9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5C25A127C13C6A0052FDF9 /* PBXTargetDependency */,
+			);
+			name = "Martian Watch WatchKit App";
+			productName = "Martian Watch WatchKit App";
+			productReference = EE5C259327C13C680052FDF9 /* Martian Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EE5C259D27C13C6A0052FDF9 /* Martian Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5C25CC27C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian Watch WatchKit Extension" */;
+			buildPhases = (
+				EE5C259A27C13C6A0052FDF9 /* Sources */,
+				EE5C259B27C13C6A0052FDF9 /* Frameworks */,
+				EE5C259C27C13C6A0052FDF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Martian Watch WatchKit Extension";
+			productName = "Martian Watch WatchKit Extension";
+			productReference = EE5C259E27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		EE5C25B727C13C6B0052FDF9 /* Martian WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5C25D727C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian WatchTests" */;
+			buildPhases = (
+				EE5C25B427C13C6B0052FDF9 /* Sources */,
+				EE5C25B527C13C6B0052FDF9 /* Frameworks */,
+				EE5C25B627C13C6B0052FDF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5C25BA27C13C6B0052FDF9 /* PBXTargetDependency */,
+			);
+			name = "Martian WatchTests";
+			productName = "Martian WatchTests";
+			productReference = EE5C25B827C13C6B0052FDF9 /* Martian WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE5C25C127C13C6B0052FDF9 /* Martian WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5C25DA27C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian WatchUITests" */;
+			buildPhases = (
+				EE5C25BE27C13C6B0052FDF9 /* Sources */,
+				EE5C25BF27C13C6B0052FDF9 /* Frameworks */,
+				EE5C25C027C13C6B0052FDF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5C25C427C13C6B0052FDF9 /* PBXTargetDependency */,
+			);
+			name = "Martian WatchUITests";
+			productName = "Martian WatchUITests";
+			productReference = EE5C25C227C13C6B0052FDF9 /* Martian WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE5C258927C13C680052FDF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EE5C258E27C13C680052FDF9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EE5C259227C13C680052FDF9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EE5C259D27C13C6A0052FDF9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EE5C25B727C13C6B0052FDF9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EE5C259D27C13C6A0052FDF9;
+					};
+					EE5C25C127C13C6B0052FDF9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EE5C259227C13C680052FDF9;
+					};
+				};
+			};
+			buildConfigurationList = EE5C258C27C13C680052FDF9 /* Build configuration list for PBXProject "Martian Watch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE5C258827C13C680052FDF9;
+			productRefGroup = EE5C259027C13C680052FDF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE5C258E27C13C680052FDF9 /* Martian Watch */,
+				EE5C259227C13C680052FDF9 /* Martian Watch WatchKit App */,
+				EE5C259D27C13C6A0052FDF9 /* Martian Watch WatchKit Extension */,
+				EE5C25B727C13C6B0052FDF9 /* Martian WatchTests */,
+				EE5C25C127C13C6B0052FDF9 /* Martian WatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE5C258D27C13C680052FDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C259127C13C680052FDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5C259927C13C6A0052FDF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C259C27C13C6A0052FDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5C25B127C13C6B0052FDF9 /* Preview Assets.xcassets in Resources */,
+				EE5C25AE27C13C6B0052FDF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25B627C13C6B0052FDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25C027C13C6B0052FDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE5C259A27C13C6A0052FDF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5C25A827C13C6A0052FDF9 /* NotificationController.swift in Sources */,
+				EE5C25A627C13C6A0052FDF9 /* ContentView.swift in Sources */,
+				EE5C25AC27C13C6A0052FDF9 /* ComplicationController.swift in Sources */,
+				EE5C25A427C13C6A0052FDF9 /* Martian_WatchApp.swift in Sources */,
+				EE5C25AA27C13C6A0052FDF9 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25B427C13C6B0052FDF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5C25BD27C13C6B0052FDF9 /* Martian_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5C25BE27C13C6B0052FDF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5C25C727C13C6B0052FDF9 /* Martian_WatchUITests.swift in Sources */,
+				EE5C25C927C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE5C259627C13C680052FDF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE5C259227C13C680052FDF9 /* Martian Watch WatchKit App */;
+			targetProxy = EE5C259527C13C680052FDF9 /* PBXContainerItemProxy */;
+		};
+		EE5C25A127C13C6A0052FDF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE5C259D27C13C6A0052FDF9 /* Martian Watch WatchKit Extension */;
+			targetProxy = EE5C25A027C13C6A0052FDF9 /* PBXContainerItemProxy */;
+		};
+		EE5C25BA27C13C6B0052FDF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE5C259D27C13C6A0052FDF9 /* Martian Watch WatchKit Extension */;
+			targetProxy = EE5C25B927C13C6B0052FDF9 /* PBXContainerItemProxy */;
+		};
+		EE5C25C427C13C6B0052FDF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE5C259227C13C680052FDF9 /* Martian Watch WatchKit App */;
+			targetProxy = EE5C25C327C13C6B0052FDF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE5C25CA27C13C6B0052FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE5C25CB27C13C6B0052FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE5C25CD27C13C6B0052FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Martian Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = W3448FZU99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Martian Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Martian Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		EE5C25CE27C13C6B0052FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Martian Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = W3448FZU99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Martian Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Martian Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		EE5C25D127C13C6B0052FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Martian_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Martian Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		EE5C25D227C13C6B0052FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Martian_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Martian Watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		EE5C25D527C13C6B0052FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EE5C25D627C13C6B0052FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EE5C25D827C13C6B0052FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Martian Watch WatchKit Extension.appex/Martian Watch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		EE5C25D927C13C6B0052FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Martian Watch WatchKit Extension.appex/Martian Watch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		EE5C25DB27C13C6B0052FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Martian Watch WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		EE5C25DC27C13C6B0052FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3448FZU99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connormcnaboe.Martian-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Martian Watch WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE5C258C27C13C680052FDF9 /* Build configuration list for PBXProject "Martian Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5C25CA27C13C6B0052FDF9 /* Debug */,
+				EE5C25CB27C13C6B0052FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5C25CC27C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5C25CD27C13C6B0052FDF9 /* Debug */,
+				EE5C25CE27C13C6B0052FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5C25D027C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5C25D127C13C6B0052FDF9 /* Debug */,
+				EE5C25D227C13C6B0052FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5C25D427C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5C25D527C13C6B0052FDF9 /* Debug */,
+				EE5C25D627C13C6B0052FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5C25D727C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5C25D827C13C6B0052FDF9 /* Debug */,
+				EE5C25D927C13C6B0052FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5C25DA27C13C6B0052FDF9 /* Build configuration list for PBXNativeTarget "Martian WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5C25DB27C13C6B0052FDF9 /* Debug */,
+				EE5C25DC27C13C6B0052FDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE5C258927C13C680052FDF9 /* Project object */;
+}
