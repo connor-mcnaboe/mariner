@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct Martian_WatchApp: App {
+    let enviroment = AppEnvironment.bootstrap()
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView(container: enviroment.container)
             }
         }
 

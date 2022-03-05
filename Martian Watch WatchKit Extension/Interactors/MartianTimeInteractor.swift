@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import Combine
 
-class MartianTimeService {
+protocol MartianTimeInteractor {
+    func calcualteMartianTime(currentEarthTimeSeconds: Double, longitude: Double)
+    func convertDoubleToDigialtclockTime(mct: Double) -> String
+}
+
+class RealMartianTimeInteractor: MartianTimeInteractor {
     let JULIAN_DATE_OFFSET: Double = 2440587.5
     let MILLISECONDS_PER_DAY: Double = 8.64*pow(10, 7)
     let SECONDS_PER_DAY: Double = 86400.00
@@ -17,8 +23,22 @@ class MartianTimeService {
     let PERTURBERS_PERIOD: Array<Double> = [2.2353, 2.7543, 1.1177, 15.7866, 2.1354, 2.4694, 32.8493]
     let PERTURBERS_PHASE: Array<Double> = [49.409, 168.173, 191.837, 21.736, 15.704, 95.528, 49.095]
     
+    let appState: Store<AppState>
     
-    func calcualteMartianTime(currentEarthTimeSeconds: Double, longitude: Double) -> Double {
+    var cancellable: Cancellable?
+    
+    init(appState: Store<AppState>) {
+        self.appState = appState
+        cancellable = Timer.publish(every: 1, on: .main, in: .default)
+            .autoconnect()
+            .print("test")
+            .sink(receiveValue: { _ in
+                self.calcualteMartianTime(currentEarthTimeSeconds: Date().timeIntervalSince1970, longitude: 0.0)
+            })
+    }
+    
+    
+    public func calcualteMartianTime(currentEarthTimeSeconds: Double, longitude: Double) {
         let currentEarthTimeMillis = currentEarthTimeSeconds*1000
         
         // Convert UTC to Julian Date
@@ -66,7 +86,23 @@ class MartianTimeService {
         // Detemine the local true solar time:
         let localTrueSolarTime: Double = Double(localMeanSolarTime) + equationOfTimeDegrees*(24/360)
         
-        return localTrueSolarTime
+        let digitalClockTime = convertDoubleToDigialtclockTime(mct: localMeanSolarTime)
+        
+        let martianTimeData = MartianTimeData(julianDate: julianDate,
+                                              julianDateTerrestrialTime: julianDateTerrestrialTime,
+                                              timeOffsetFromJ200Epoch: timeOffsetFromJ200Epoch,
+                                              meanAnomaly: meanAnomaly,
+                                              angleOfFictionMeanSun: angleOfFictionMeanSun,
+                                              perturbers: perturbers,
+                                              trueAnomalyMinusMean: trueAnomalyMinusMean,
+                                              aeroCentricSolarLongitude: aeroCentricSolarLongitude,
+                                              equationOfTimeDegrees: equationOfTimeDegrees,
+                                              meanSolarTimePrimeMeridian: meanSolarTimePrimeMeridian,
+                                              localMeanSolarTime: localMeanSolarTime,
+                                              localTrueSolarTime: localTrueSolarTime,
+                                              digitalClockTime: digitalClockTime)
+        
+        appState.value.martianData.martianData = martianTimeData
     }
     
     public func convertDoubleToDigialtclockTime(mct: Double) -> String {
@@ -81,7 +117,7 @@ class MartianTimeService {
         return hourString + ":" + minuteString + ":" + secondString
     }
     
-    private func convertTimeDoubleToString(timeDouble: Double) -> String {
+    internal func convertTimeDoubleToString(timeDouble: Double) -> String {
         if timeDouble != 0.0 {
             if (timeDouble < 10.0) {
                 return "0" + String(Int(timeDouble))
@@ -93,12 +129,16 @@ class MartianTimeService {
         }
     }
     
-    private func sinDeg(deg: Double) -> Double {
+    internal func sinDeg(deg: Double) -> Double {
         return sin(deg*Double.pi/180.00)
     }
     
-    private func cosDeg(deg: Double) -> Double {
+    internal func cosDeg(deg: Double) -> Double {
         return cos(deg*Double.pi/180.00)
     }
-    
+}
+
+struct StubMartianTimerInteractor: MartianTimeInteractor {
+    func calcualteMartianTime(currentEarthTimeSeconds: Double, longitude: Double) { }
+    func convertDoubleToDigialtclockTime(mct: Double) -> String { return "00:00:00" }
 }
