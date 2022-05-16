@@ -47,7 +47,7 @@ struct MartianTimeView: View {
 // Local View State Mapping container:
 private extension MartianTimeView {
     struct ViewState: Equatable {
-        var currentMartianData: MartianTimeData = MartianTimeData(julianDate: 0.0,
+        var currentMartianData: MartianTime = MartianTime(julianDate: 0.0,
                                                                   julianDateTerrestrialTime: 0.0,
                                                                   timeOffsetFromJ200Epoch: 0.0,
                                                                   meanAnomaly: 0.0,

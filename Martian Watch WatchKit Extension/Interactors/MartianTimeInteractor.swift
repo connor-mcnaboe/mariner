@@ -88,7 +88,7 @@ class RealMartianTimeInteractor: MartianTimeInteractor {
         
         let digitalClockTime = convertDoubleToDigialtclockTime(mct: localMeanSolarTime)
         
-        let martianTimeData = MartianTimeData(julianDate: julianDate,
+        let martianTimeData = MartianTime(julianDate: julianDate,
                                               julianDateTerrestrialTime: julianDateTerrestrialTime,
                                               timeOffsetFromJ200Epoch: timeOffsetFromJ200Epoch,
                                               meanAnomaly: meanAnomaly,

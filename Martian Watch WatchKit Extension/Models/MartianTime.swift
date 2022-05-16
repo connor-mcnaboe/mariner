@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MartianTimeData: Codable, Equatable {
+struct MartianTime: Codable, Equatable {
     let julianDate: Double
     let julianDateTerrestrialTime: Double
     let timeOffsetFromJ200Epoch: Double

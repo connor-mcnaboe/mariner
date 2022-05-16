@@ -21,7 +21,7 @@ extension AppState {
 
 extension AppState {
     struct MartianData: Equatable {
-        var martianData = MartianTimeData(julianDate: 0.0,
+        var martianData = MartianTime(julianDate: 0.0,
                                               julianDateTerrestrialTime: 0.0,
                                               timeOffsetFromJ200Epoch: 0.0,
                                               meanAnomaly: 0.0,
@@ -47,7 +47,7 @@ extension AppState {
     static var preview: AppState {
         var state = AppState()
         state.system.isActive = true
-        state.martianData.martianData = MartianTimeData(julianDate: 0.0,
+        state.martianData.martianData = MartianTime(julianDate: 0.0,
                                                         julianDateTerrestrialTime: 0.0,
                                                         timeOffsetFromJ200Epoch: 0.0,
                                                         meanAnomaly: 0.0,

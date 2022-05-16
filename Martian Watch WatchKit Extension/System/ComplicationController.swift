@@ -53,7 +53,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Sample Templates
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        switch complication.family {
+            case .modularLarge: // Example
+                let template = CLKComplicationTemplateModularLargeStandardBody()
+                template.headerTextProvider = CLKSimpleTextProvider(text: "Sample Text")
+                template.headerImageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Image_Name")!)
+                template.body1TextProvider = CLKSimpleTextProvider(text: "Body 1 sample text")
+                template.body2TextProvider = CLKSimpleTextProvider(text: "Body 2 sample text")
+                handler(template)
+            default:
+                handler(nil)
+        }
     }
 }

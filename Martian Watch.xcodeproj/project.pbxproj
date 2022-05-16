@@ -14,7 +14,7 @@
 		EE0EB85627CACB7200C78BE3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0EB85527CACB7200C78BE3 /* Store.swift */; };
 		EE0EB85827CACC4F00C78BE3 /* RootViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0EB85727CACC4F00C78BE3 /* RootViewModifier.swift */; };
 		EE0EB85A27CACCB800C78BE3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0EB85927CACCB800C78BE3 /* Helpers.swift */; };
-		EE0EB85D27CAD48900C78BE3 /* MartianTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0EB85C27CAD48900C78BE3 /* MartianTimeData.swift */; };
+		EE0EB85D27CAD48900C78BE3 /* MartianTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0EB85C27CAD48900C78BE3 /* MartianTime.swift */; };
 		EE5C259427C13C680052FDF9 /* Martian Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EE5C259327C13C680052FDF9 /* Martian Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EE5C259927C13C6A0052FDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5C259827C13C6A0052FDF9 /* Assets.xcassets */; };
 		EE5C259F27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE5C259E27C13C6A0052FDF9 /* Martian Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -30,6 +30,7 @@
 		EE5C25C927C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25C827C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift */; };
 		EE5C25DF27C13E410052FDF9 /* MartianTimeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25DE27C13E410052FDF9 /* MartianTimeInteractor.swift */; };
 		EE5C25E227C1520A0052FDF9 /* MartianTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C25E127C1520A0052FDF9 /* MartianTimeView.swift */; };
+		EEE7D8DA27D3ED47002B586C /* TimeComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE7D8D927D3ED47002B586C /* TimeComplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +97,7 @@
 		EE0EB85527CACB7200C78BE3 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		EE0EB85727CACC4F00C78BE3 /* RootViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModifier.swift; sourceTree = "<group>"; };
 		EE0EB85927CACCB800C78BE3 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		EE0EB85C27CAD48900C78BE3 /* MartianTimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartianTimeData.swift; sourceTree = "<group>"; };
+		EE0EB85C27CAD48900C78BE3 /* MartianTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartianTime.swift; sourceTree = "<group>"; };
 		EE5C258F27C13C680052FDF9 /* Martian Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Martian Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5C259327C13C680052FDF9 /* Martian Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Martian Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5C259827C13C6A0052FDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 		EE5C25C827C13C6B0052FDF9 /* Martian_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Martian_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE5C25DE27C13E410052FDF9 /* MartianTimeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartianTimeInteractor.swift; sourceTree = "<group>"; };
 		EE5C25E127C1520A0052FDF9 /* MartianTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartianTimeView.swift; sourceTree = "<group>"; };
+		EEE7D8D927D3ED47002B586C /* TimeComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeComplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		EE0EB84727CAC62F00C78BE3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EEE7D8D827D3ED33002B586C /* Complications */,
 				EE0EB84827CAC64000C78BE3 /* Screens */,
 				EE0EB85727CACC4F00C78BE3 /* RootViewModifier.swift */,
 			);
@@ -220,7 +223,7 @@
 		EE0EB85B27CAD46F00C78BE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EE0EB85C27CAD48900C78BE3 /* MartianTimeData.swift */,
+				EE0EB85C27CAD48900C78BE3 /* MartianTime.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +307,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		EEE7D8D827D3ED33002B586C /* Complications */ = {
+			isa = PBXGroup;
+			children = (
+				EEE7D8D927D3ED47002B586C /* TimeComplication.swift */,
+			);
+			path = Complications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,9 +506,10 @@
 			files = (
 				EE5C25A827C13C6A0052FDF9 /* NotificationController.swift in Sources */,
 				EE0EB85A27CACCB800C78BE3 /* Helpers.swift in Sources */,
+				EEE7D8DA27D3ED47002B586C /* TimeComplication.swift in Sources */,
 				EE0EB85127CAC8B200C78BE3 /* AppState.swift in Sources */,
 				EE5C25A627C13C6A0052FDF9 /* ContentView.swift in Sources */,
-				EE0EB85D27CAD48900C78BE3 /* MartianTimeData.swift in Sources */,
+				EE0EB85D27CAD48900C78BE3 /* MartianTime.swift in Sources */,
 				EE0EB85627CACB7200C78BE3 /* Store.swift in Sources */,
 				EE5C25AC27C13C6A0052FDF9 /* ComplicationController.swift in Sources */,
 				EE5C25E227C1520A0052FDF9 /* MartianTimeView.swift in Sources */,
